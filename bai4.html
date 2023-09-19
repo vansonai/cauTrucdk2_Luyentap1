@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let n = +prompt('Nhap so luong so fibonaci');
+    let text =  "0 1";
+    document.write(text+ " ")
+    for (let i = 0; i <n - 2; i++) {
+      let c = a + b;
+      a = b;
+      b = c;
+      if ( c % 5 === 0 ) {
+          alert("So dau tien chia het cho 5 la: " + c)
+          i = n+2
+      }
+      document.write(c + "  ")
+    }
+
+
+</script>
+</body>
+</html>

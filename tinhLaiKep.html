@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year = +prompt('Nhap so nam vay')
+    let monney = +prompt("Nhap so tien")
+    for (let i = 0; i < year; i++ ) {
+        monney = monney*5.6/100 + monney;
+    }
+    alert('Tong tien ca von lan lai la: ' +monney)
+</script>
+</body>
+</html>
